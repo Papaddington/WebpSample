@@ -1,6 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 28
@@ -48,6 +49,7 @@ dependencies {
 
     implementation "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.50"
     implementation "androidx.cardview:cardview:1.0.0"
+    kapt "com.github.bumptech.glide:compiler:4.11.0"
 
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-andx-7'
